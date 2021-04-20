@@ -104,16 +104,6 @@ body{
     overflow: hidden;
 }
 
-.slideAnim {
-    animation-name: slide;
-    animation-duration: 2s;
-  }
-
-@keyframes slide {
-    from {  margin-left: 0px;}
-    to { margin-left: 200px;}
-       
-   }
 
 .containerText h3 {
     font-size: 2.6em;
@@ -225,12 +215,17 @@ input[type=number] {
  
 }
 #input_1_8{
-    padding: 9px;
+    padding: 6px 9px 6px 7px;
     cursor: pointer;
     transition: 0.5s ease-in;
     
 
 }
+#sub-div{
+    width: 50%;
+    margin: auto;
+}
+
 #input_1_8:hover{
    background-color: rgb(233, 153, 4);
    transition: 0.5s ease-in;
@@ -245,7 +240,7 @@ input[type=number] {
     align-items: center;
     font-size: 1.2rem;
     width: 100%;
-    background-color:rgb(36, 30, 18);
+    background-color:rgba(7, 7, 6, 0.877);
 }
 .footer-distributed a{
     color:white;
@@ -316,7 +311,8 @@ input[type=number] {
         width: 90%;
     }
     #input_1_8{
-        width: 10%;
+        width: 40%;
+        padding: 10px 2px 8px 2px;
     }
 
  @media screen and (min-width: 946px){

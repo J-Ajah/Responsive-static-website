@@ -1,0 +1,350 @@
+*{
+    box-sizing: border-box;
+    overflow:auto;
+}
+body{
+    background-color: white;
+    color: black;
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+.nav-container{
+    background-color: rgb(233, 153, 4);
+    color: white;
+    position: relative;
+    display: none;
+}
+
+.show{
+    display: block;
+}
+
+.nav-hide{
+    display: none;
+}
+
+.nav-show{
+    background-color:rgb(233, 153, 4);
+    border-radius: 4px;
+    width: 58px;
+    height: 40px;
+    position: absolute;
+    bottom:198px;
+    right:9px;
+    margin-top: 10px;
+   
+    top: 0;
+    float: right;
+    cursor: pointer;
+    /* left: 475px; */
+}
+
+.nav-show div{
+     background-color: white;
+     width:35px;
+     justify-items: center;
+     margin: 5.5px auto;
+     height: 5px;
+     border: solid 1px rgb(99, 92, 92);
+}
+
+.nav-ul {
+    margin: 0px;
+    list-style-type: none;
+    text-align: center;
+    padding: 0px;
+    font-size: 0px; /*fills in the remaining space that is left unfiled by the list*/
+    
+}
+
+.nav-ul li{
+    
+    padding: 16px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border-bottom: 1px solid rgb(8, 8, 8);
+    transition: background-color 0.6s;
+    
+}
+
+.nav-ul li:hover {
+    background-color: white;
+    color:  rgb(10, 10, 10);
+    cursor: pointer;
+}
+
+
+.img-container{
+    background-image: url('../images/business-962310_1920.jpg');
+    background-position: center center; 
+    background-size: cover; 
+    padding-top: 200px;
+    height: 500px;
+    padding-bottom: 200px; 
+    overflow: hidden;
+}
+
+.containerText {
+    width: 35%;
+    min-width: 416px;
+    height: auto;
+    background-color: rgba(255, 255, 255, 0.768);
+    color: white;
+    text-align: center;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    margin-right: 150px;
+    margin-top: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.slideAnim {
+    animation-name: slide;
+    animation-duration: 2s;
+  }
+
+@keyframes slide {
+    from {  margin-left: 0px;}
+    to { margin-left: 200px;}
+       
+   }
+
+.containerText h3 {
+    font-size: 2.6em;
+    padding-bottom: 0;
+    box-sizing: border-box;
+    color: black;
+    font-family: Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.containerText p {
+    padding: 0px 70px 0px 70px;
+    font-size: 1.6rem;
+    position: relative;
+    bottom: 30px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.containerText button {
+    padding: 0.9em;
+    font-size: 1em;
+    font-weight: bold;
+    border-radius: 5px;
+    outline: none;
+    border-style: none;
+    cursor: pointer;
+    background-color:  rgb(233, 153, 4);
+    color: aliceblue;
+    position: relative;
+    bottom: 27px;
+    transition: 0.5s ease-out;
+}
+
+.containerText button:hover{
+    background-color:white;
+    color: black;
+    transition: 0.5s ease-in;
+}
+
+
+
+.intro-text{
+    color: rgb(39, 39, 39);
+    font-size: 1.5rem;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.single-services{
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.single-services p{
+    padding: 0px 26px;
+    font-size: 1.5rem;
+}
+
+.form-container{
+   background-color:rgb(66 66 66);
+   text-align: center;
+   padding: 20px;
+}
+#contact-text{
+    color: white;
+
+}
+form{
+    width: 100%;
+    margin:0 auto;
+}
+
+form input {
+    padding: 1.4em 1em 1.2em ;
+    border-radius: 7px;
+    color:rgb(34, 33, 33);
+    background-color: rgb(252, 252, 252);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80%;
+    margin: 10px auto;
+    font-size: 1.3rem;
+    border: solid 1px rgb(233, 153, 4);;
+    outline: none;
+    /* box-sizing: border-box; */
+}
+.input-class{  
+    margin-left: 20px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+#input_1_7{
+    width: 80%;
+    background-color:rgb(252, 252, 252);
+    border: solid 1px rgb(233, 153, 4);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    width: 80%;
+    outline: none;
+    font-size: 1.3rem;
+ 
+}
+#input_1_8{
+    padding: 9px;
+    cursor: pointer;
+    transition: 0.5s ease-in;
+    
+
+}
+#input_1_8:hover{
+   background-color: rgb(233, 153, 4);
+   transition: 0.5s ease-in;
+   color: white;
+    
+}
+
+
+/* Footer starts here */
+.footer-distributed {
+    color: white;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 100%;
+    background-color:rgb(36, 30, 18);
+}
+.footer-distributed a{
+    color:white;
+}
+
+.footer-right{
+    text-align: center;
+}
+
+.copyright, .footer-links{
+    text-align: center;
+}
+
+
+
+@media screen and (min-width:480px) and (max-width:700px){
+        
+.containerText {
+    position: static;
+    /* bottom: 0px;
+    bottom: 0;
+    /* background-color: red; */
+    margin:-190px auto 200px auto;
+   
+}
+
+   
+}
+
+@media screen and (min-width: 700px){ /*style pages when the minimum width is 700*/
+    .nav-show{
+        display: none;
+    }
+
+    #navBar{
+        display: block;
+    }
+    .nav-container{
+        display: block;
+    }
+    .nav ul{
+        text-align: center;
+    
+    }
+    .nav-ul li{
+        display: inline-block;
+        border-bottom: 0px;
+    }
+
+    .nav-ul {
+        
+         height: 80px;
+         overflow: hidden;
+        
+    }
+    
+    .nav-ul li{
+        line-height: 50px;
+        
+        
+    }
+
+    .form-div{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    #input_1_7{
+        width: 90%;
+    }
+    #input_1_8{
+        width: 10%;
+    }
+
+ @media screen and (min-width: 946px){
+        .services{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+        } 
+    }
+
+}
+
+
+
+  /* Media Queries for footer*/
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+    .Blogo , .copyright{
+      text-align: center;
+      display: block;
+    }
+  }

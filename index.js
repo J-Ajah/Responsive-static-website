@@ -6,31 +6,31 @@ let navContainer = $(".nav-container");
 
 const userInputArray = [];
 
-window.addEventListener("resize", getWindowsSize);
+// window.addEventListener("resize", getWindowsSize);
 
-function getWindowsSize(){
-    // Get width and height of the window excluding scrollbars
-    var w = document.documentElement.clientWidth;
-    // var h = document.documentElement.clientHeight;
+// function getWindowsSize(){
+//     // Get width and height of the window excluding scrollbars
+//     var w = document.documentElement.clientWidth;
+//     // var h = document.documentElement.clientHeight;
 
-    if(w >= 700){
-        navButton.style.display = "block";
-        // navButton.style.display = "none";
-    }
-
-
-    console.log(w)
-}
-
-navButton.addEventListener("click", ()=>{
-    navContainer.slideToggle();
-})
-
-
-// $(".nav-show").on("click", ()=>{
-//     // $(".nav-container").toggle();
-//     $(".nav-container").addClass(".slideAnim");
+//     if(w >= 700){
+//         navButton.style.display = "block";
+//         // navButton.style.display = "none";
+//     }navButton.addEventListener("click", ()=>{
+//     navContainer.slideToggle();
 // })
+
+
+//     console.log(w)
+// }
+
+
+
+
+$(".nav-show").on("click", ()=>{
+    $(".nav-container").toggle();
+
+})
 
 
 //formats

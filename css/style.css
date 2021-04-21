@@ -16,6 +16,7 @@ body{
     color: white;
     position: relative;
     display: none;
+    z-index: 10;
 }
 
 .show{
@@ -83,14 +84,14 @@ body{
     background-position: center center; 
     background-size: cover; 
     padding-top: 200px;
-    height: 500px;
+    height: 600px;
     padding-bottom: 200px; 
     overflow: hidden;
 }
 
 .containerText {
-    width: 35%;
-    min-width: 416px;
+    width: 25%;
+    min-width: 356px;
     height: auto;
     background-color: rgba(255, 255, 255, 0.768);
     color: white;
@@ -98,8 +99,9 @@ body{
     position: absolute;
     right: 0;
     top: 80px;
-    margin-right: 150px;
+    margin-right:2px;
     margin-top: 20px;
+    margin-bottom: 120px;
     border-radius: 10px;
     overflow: hidden;
 }
@@ -264,15 +266,17 @@ input[type=number] {
 
 
 @media screen and (min-width:480px) and (max-width:700px){
-        
+
 .containerText {
-    position: static;
-    /* bottom: 0px;
-    bottom: 0;
-    /* background-color: red; */
-    margin:-190px auto 200px auto;
+    position: absolute;
+    right: 100px;
+    width: 70%;
+  
+    /* background-color: red;*/
+    /* margin:-190px 300px 200px auto; */
    
-}
+}  
+
 
    
 }
@@ -322,13 +326,27 @@ input[type=number] {
         padding: 10px 2px 8px 2px;
     }
 
+    .containerText {
+        position: absolute;
+        right: 100px;
+        top: 200px;
+        width: 50%;
+      
+        /* background-color: red;*/
+        /* margin:-190px 300px 200px auto; */
+       
+    }  
+
  @media screen and (min-width: 946px){
         .services{
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
             margin-bottom: 80px;
         } 
-    }
+
+    
+
+    
 
 }
 
@@ -352,3 +370,21 @@ input[type=number] {
       display: block;
     }
   }
+
+}
+
+
+  @media screen and (min-width: 1200px){
+        
+         .containerText {
+            position: absolute;
+            right: -200px;
+            top: 400px;
+            width: 40%;
+            max-width: 40%;
+          
+            /* background-color: red;*/
+            margin:-190px 300px 200px auto;
+           
+        }   
+  } 

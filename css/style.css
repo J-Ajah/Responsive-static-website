@@ -36,8 +36,8 @@ body{
     bottom:198px;
     right:9px;
     margin-top: 10px;
-   
     top: 0;
+    z-index: 100;
     float: right;
     cursor: pointer;
     /* left: 475px; */

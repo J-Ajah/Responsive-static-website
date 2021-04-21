@@ -35,7 +35,7 @@ $(".nav-show").on("click", ()=>{
 
 //formats
 const emailFormat = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
-const checkNumber = /^[0-9]+$/;
+// const checkNumber = /^[0-9]+$/;
 
 
 
@@ -72,77 +72,14 @@ function  validateInput () {
     if(!(email.match(emailFormat)) || fname == "" || lname == "" || phoneNumber == "" || website == "" || company == "" || textArea == ""){
         alert("Please enter a valid value for all fields");
     }else{
-        alert("Name: "+fname + "\n" + lname);
+        alert("Name:  "+fname + "\n" + "Lastname:  " + lname +  "\n" +
+            "Email:  "+ email +  "\n" + "PhoneNumber:  " + phoneNumber + "\n"+
+            "Website:  "+ website +  "\n" + "Company:  " + company +  "\n" + "Other comments:  "+ textArea
+        );
     }
 
 
 
 
 }
-
-
-
-
-
-
-
-//sam-code
-// const textbox = document.querySelectorAll("input");
-
-// console.log(textbox);
-// const btn = textbox[3];
-// // console.log(textbox[3]);
-// const textb1 = textbox[0];
-// const textb2 = textbox[1];
-// const textb3 = textbox[2];
-// const textbox1 = textb1.value;
-
-// btn.addEventListener("click",function(e){
-//     const name = textb1.value;
-//     const email = textb2.value;
-//     const mobile = textb3.value;
-
-//     const check = /^[-+]?[0-9]+$/;
-//     if(name =="" || email ==""|| mobile ==""){
-//         alert("Fill all fields")
-//     }else if(!(email.match(email1))){
-//         alert("Highlighted field - wrong format");
-//         textb2.style.border = "2px solid red";
-//     } else if(!(mobile.match(check))){
-//         alert("Highlighted field - wrong format");
-
-//      }else if(mobile.length>10){
-//          alert("number is greater 10")
-//          textb3.style.border = "2px solid red";
-//      }
-//      else if(mobile.length<10){
-//          alert("number is less than 10")
-//          textb3.style.border = "2px solid red";
-//      } else if(!(mobile.startsWith("0"))){
-//          alert("mobile number must start with a zero");
-//          textb3.style.border = "2px solid red";
-//      }
-
-//     else{
-//         alert (`
-//         Name: ${name}
-//         E-mail: ${email}
-//         Phone: ${mobile}
-
-
-//         `)
-//     }
-
-
-
-
-
-
-
-
-
-
-
-
-// })
 

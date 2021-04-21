@@ -84,7 +84,7 @@ body{
     background-position: center center; 
     background-size: cover; 
     padding-top: 200px;
-    height: 600px;
+    height: 700px;
     padding-bottom: 200px; 
     overflow: hidden;
 }
@@ -325,6 +325,14 @@ input[type=number] {
         width: 40%;
         padding: 10px 2px 8px 2px;
     }
+
+
+    
+
+.img-container{
+    height: 600px;
+}
+
 
     .containerText {
         position: absolute;
